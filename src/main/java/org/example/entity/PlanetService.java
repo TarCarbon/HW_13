@@ -7,7 +7,7 @@ public class PlanetService {
         planetDAO.save(planet);
     }
 
-    public Planet findPlanetById(int id) {
+    public Planet findPlanetById(String id) {
         return planetDAO.findById(id);
     }
 
