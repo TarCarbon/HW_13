@@ -18,7 +18,7 @@ public class PlanetDAO {
     }
 
     //Read
-    public Planet findById(int id) {
+    public Planet findById(String id) {
         try(Session session = sessionFactory.openSession()) {
             return session.get(Planet.class, id);
         }
